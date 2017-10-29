@@ -132,7 +132,7 @@ abstract class Field extends Widget
                 if (method_exists($this->relation, 'getOtherKey')) {
                     $this->rel_other_key = $this->relation->getOtherKey();
                 }else{
-                    $this->rel_other_key = $this->relation->getQualifiedRelatedKeyName();
+                    $this->rel_other_key = $this->relation->getQualifiedRelatedPivotKeyName();
                 }
 
             }
