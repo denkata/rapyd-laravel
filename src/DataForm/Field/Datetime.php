@@ -9,14 +9,14 @@ class Datetime extends Field
 {
     public $type = "datetime";
     public $format = 'Y-m-d H:i:s';
-    public $language = 'zh-CN';
+    public $language = 'en';
 
     /**
      * set instarnal preview datetime format
      * @param $format valid php datetime format
      * @param string $language valid datetimePicker language string http://www.malot.fr/bootstrap-datetimepicker/
      */
-    public function format($format, $language = 'zh-CN')
+    public function format($format, $language = 'en')
     {
         $this->format = $format;
         $this->language = $language;

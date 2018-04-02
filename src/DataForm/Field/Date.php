@@ -9,7 +9,7 @@ class Date extends Field
 {
     public $type = "date";
     public $format = 'Y-m-d';
-    public $language = 'zh-CN';
+    public $language = 'en';
     public $clause = "where";
 
     /**
@@ -17,7 +17,7 @@ class Date extends Field
      * @param $format valid php date format
      * @param string $language valid DatePicker language string http://bootstrap-datepicker.readthedocs.org/en/release/options.html#language
      */
-    public function format($format, $language = 'zh-CN')
+    public function format($format, $language = 'en')
     {
         $this->format = $format;
         $this->language = $language;
